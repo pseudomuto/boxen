@@ -1,10 +1,12 @@
 class people::pseudomuto {
-  include "emacs"
-  include "sublime_text_2"
-  include "firefox"
-  include "charles"
-  include "dropbox"
-  include iterm2::stable
+  # app bundles
+  include apps::browsers
+  include apps::editors
+  include apps::utils
 
+  # projects
   include projects::all
+
+  # personal additions
+  include "dropbox"
 }

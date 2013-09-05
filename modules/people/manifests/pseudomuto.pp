@@ -4,6 +4,7 @@ class people::pseudomuto {
   include "firefox"
   include "charles"
   include "dropbox"
+  include iterm2::stable
 
   include projects::all
 }

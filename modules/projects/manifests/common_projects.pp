@@ -3,4 +3,8 @@ class projects::common_projects {
     ruby    => '1.8.7',
     source  => 'boxen/boxen-web'
   }
+
+  boxen::project { 'hubot': 
+    source => 'pseudomuto/hubot'
+  }
 }
